@@ -1,0 +1,22 @@
+{
+  "name": "nordan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^10.3.1",
+    "cssnano": "^5.0.7",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.7"
+  },
+  "scripts": {
+    "build": "set TAILWIND_MODE=watch&postcss tailwind.css -o ./docs/styles.css -w --verbose",
+    "prod": "NODE_ENV=production postcss tailwind.css -o ./docs/styles.css"
+  },
+  "keywords": [],
+  "author": "Thilo Jaeggi",
+  "dependencies": {
+    "package.json": "^2.0.1",
+    "postcss": "^8.4.12"
+  }
+}
