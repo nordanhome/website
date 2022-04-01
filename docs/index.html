@@ -13,6 +13,7 @@
     <meta property="og:image" content="img/logo.png" />
     <title>nordan - Smart Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body class="bg-black">
@@ -70,43 +71,17 @@
         </div>
         <div class="w-full h-full">
             <div class="h-full flex flex-col justify-center">
-                <svg id="hexagons" class="w-full" id="ewdaMpcxUOG1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="46 0 923 1080"
-                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-                    <defs>
-                        <filter id="filter" x="-400%" width="600%" y="-400%" height="600%">
-                            <feGaussianBlur id="ewdaMpcxUOG2-filter-drop-shadow-0-blur" in="SourceAlpha"
-                                stdDeviation="10,10" />
-                            <feOffset id="ewdaMpcxUOG2-filter-drop-shadow-0-offset" dx="0" dy="0" result="tmp" />
-                            <feFlood id="ewdaMpcxUOG2-filter-drop-shadow-0-flood" flood-color="#fff" />
-                            <feComposite id="ewdaMpcxUOG2-filter-drop-shadow-0-composite" operator="in" in2="tmp" />
-                            <feMerge id="ewdaMpcxUOG2-filter-drop-shadow-0-merge">
-                                <feMergeNode id="ewdaMpcxUOG2-filter-drop-shadow-0-merge-node-1" />
-                                <feMergeNode id="ewdaMpcxUOG2-filter-drop-shadow-0-merge-node-2" in="SourceGraphic" />
-                            </feMerge>
-                        </filter>
-                    </defs>
-                    <polygon id="ewdaMpcxUOG2"
-                        points="0,-144.576986 125.207343,-72.288493 125.207343,72.288493 0,144.576986 -125.207343,72.288493 -125.207343,-72.288493 0,-144.576986"
-                        transform="matrix(1 0 0 1 372.545074 552.302518)" filter="url(#filter)"
-                        fill="rgba(210,219,237,0)" stroke="rgb(255,255,255)" stroke-width="20" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <polygon id="ewdaMpcxUOG3"
-                        points="0,-144.576986 125.207343,-72.288493 125.207343,72.288493 0,144.576986 -125.207343,72.288493 -125.207343,-72.288493 0,-144.576986"
-                        transform="matrix(1 0 0 1 648.682645 552.302518)" filter="url(#filter)"
-                        fill="rgba(210,219,237,0)" stroke="rgb(255,255,255)" stroke-width="20" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <polygon id="ewdaMpcxUOG4"
-                        points="0,-144.576986 125.207343,-72.288493 125.207343,72.288493 0,144.576986 -125.207343,72.288493 -125.207343,-72.288493 0,-144.576986"
-                        transform="matrix(1 0 0 1 236.175793 792.048512)" filter="url(#filter)"
-                        fill="rgba(210,219,237,0)" stroke="rgb(255,255,255)" stroke-width="20" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <polygon id="ewdaMpcxUOG5"
-                        points="0,-144.576986 125.207343,-72.288493 125.207343,72.288493 0,144.576986 -125.207343,72.288493 -125.207343,-72.288493 0,-144.576986"
-                        transform="matrix(1 0 0 1 786.422385 313.767996)" filter="url(#filter)"
-                        fill="rgba(210,219,237,0)" stroke="rgb(255,255,255)" stroke-width="20" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                </svg>
+                <!--
+                <svg id="hexagons" class="w-2/3 rotate-45 w-t slapped
+                /3 mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 488 119.24"><defs><style>.cls-3{fill:#000;}</style></defs><g id="Modules"><rect class="cls-3" width="119" height="119"/><rect class="cls-3" x="123" y="0.24" width="119" height="119"/><rect class="cls-3" x="246" y="0.24" width="119" height="119"/><rect class="cls-3" x="369" y="0.24" width="119" height="119"/></g></svg>
+                    -->
+            <model-viewer class="w-1/2 w-t mx-auto" src="./3d/stromstrip.glb"
+              ios-src="./3d/stromstrip.usdz"
+              alt="A 3D model of an astronaut"
+              ar
+              auto-rotate
+              camera-controls>
+            </model-viewer>
             </div>
         </div>
     </section>
@@ -123,7 +98,7 @@
                     <h1 class="text-xl">Secure</h1>
                 </header>
                 <p class="text-gray-500">No cloud or registration necessary to use nordan. Just add the device in the
-                    app or HomeKit and you’re
+                    app or HomeKit and you're
                     ready to go. Our Cloud is optionally available and secured on multiple layers.</p>
             </div>
 
@@ -151,7 +126,7 @@
                 </header>
                 <p class="text-gray-500">Combined with the latest technology and support for WLAN and Bluetooth. nordan
                     devices convince with a
-                    complete range of functions that are permanently improved and expanded through updates.</p>
+                    complete range of functions that are constantly improved and expanded through updates.</p>
             </div>
 
         </div>
