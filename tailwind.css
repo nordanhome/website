@@ -70,9 +70,10 @@ html {
       }
 
       .hexagon {
-        clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
-        background-color: white;
+       /* clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); */
+        background-color: transparent;
+        border: white 3px solid;
         background-size: cover;
-        height: 27rem;
+        height: 24rem;
         width: 24rem;    
       }
