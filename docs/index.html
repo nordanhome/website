@@ -59,7 +59,7 @@
                         </g>
                     </g>
                 </svg>
-                <h1 class="text-5xl lg:text-7xl text-white mb-5 filter drop-shadow-xl leading-10">innovation lighting</h1>
+                <h1 class="text-5xl lg:text-7xl text-white mb-10 filter drop-shadow-xl">innovation lighting</h1>
                 <a id="discover" onClick="scrollToFeatures();"
                     class="transition-colors cursor-pointer duration-300 bg-white hover:bg-black hover:border-white text-black hover:text-white border-2  font-bold py-2 px-5 rounded-sm hover:shadow-2xl ">
                     Discover More &rarr;
@@ -70,9 +70,9 @@
         <div class="w-full h-full">
             <div class="h-full flex flex-col justify-center">
 
-                <svg class="" id="eHlcWaOeu1i1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="-150 -150 1500 1500" shape-rendering="geometricPrecision"
-                    text-rendering="geometricPrecision">
+                <svg class="" id="eHlcWaOeu1i1" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-150 -150 1500 1500"
+                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                     <style>
                         #eHlcWaOeu1i5_to {
                             animation: eHlcWaOeu1i5_to__to 7400ms linear 1 normal forwards
@@ -596,14 +596,16 @@
                 alt="Kickstarter Logo"></a>
     </section>
     <script>
+
+
         function scrollToFeatures() {
             document.getElementById('features').scrollIntoView({
                 behavior: 'auto',
-                block: 'center',
-                inline: 'center'
+                block: window.innerWidth > 640 ? 'center' : 'start',
+                inline: window.innerWidth > 640 ? 'center' : 'start',
             });
-        }
 
+        }
     </script>
 </body>
 
