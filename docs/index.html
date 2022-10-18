@@ -1,612 +1,637 @@
-<!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="nordan is a new Smart Home ecosystem based in Switzerland" />
+        <meta property="og:description" content="nordan is a new Smart Home ecosystem based in Switzerland" />
+        <meta property="og:url" content="https://nordanhome.ch" />
+        <meta property="og:site_name" content="nordan" />
+        <meta property="og:type" content="Website" />
+        <meta property="og:image" content="img/logo.png" />
+        <title>nordan - Smart Home</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="nordan is a new Smart Home ecosystem based in Switzerland">
-    <meta property="og:description" content="nordan is a new Smart Home ecosystem based in Switzerland" />
-    <meta property="og:url" content="https://nordanhome.ch" />
-    <meta property="og:site_name" content="nordan" />
-    <meta property="og:type" content="Website" />
-    <meta property="og:image" content="img/logo.png" />
-    <title>nordan - Smart Home</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body class="bg-black">
-    <section class="h-screen w-full shadow-2xl flex flex-col-reverse md:flex-row items-center">
-        <a href="https://cloud.nordanhome.ch"
-            class="transition-colors duration-300 bg-white hover:bg-black hover:border-white text-black hover:text-white border-2 font-bold py-1 px-5 rounded-sm absolute right-3 top-3 filter drop-shadow-2xl  z-10">
+    <body class="bg-black">
+        <a
+            href="https://cloud.nordanhome.ch"
+            class="transition-colors duration-300 bg-white hover:bg-black hover:border-white text-black hover:text-white border-2 font-bold py-1 px-5 rounded-sm absolute right-3 top-3 filter drop-shadow-2xl z-10"
+        >
             Dashboard
         </a>
-        <div class="flex sm:flex-col sm:justify-center sm:content-center sm:items-center h-full w-3/4 p-2 md:p-6">
-            <div>
-                <svg class="w-full sm:w-96 md:scale-150 ml-1 md:ml-24 h-auto sm:mb-6 sm:mb-12 fill-current"
-                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556.61788 130">
-                    <defs>
+        <section class="h-screen w-full shadow-2xl flex flex-col-reverse md:flex-row items-center">
+            <div class="flex sm:flex-col h-full w-full" style="align-items: end; justify-content: center;">
+                <div>
+                    <svg class="sm:w-96 md:scale-150 ml-1 md:ml-24 h-auto sm:mb-6 sm:mb-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 556.61788 130">
+                        <defs>
+                            <style>
+                                .cls-1 {
+                                    fill: #fff;
+                                }
+                            </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                            <g id="Layer_1-2" data-name="Layer 1">
+                                <path
+                                    class="cls-1"
+                                    d="M26.75342,119.69189h-17.46V81.39209C9.29346,57.5957,24.78223,40.98,46.88916,40.98c22.24756,0,37.73633,16.61572,37.73633,40.41211v38.2998h-17.46V78.85742c0-12.9541-8.30762-21.96582-20.27637-21.96582-11.82812,0-20.13574,9.01172-20.13574,21.96582Z"
+                                    transform="translate(-9.29346 -15.77539)"
+                                ></path>
+                                <path
+                                    class="cls-1"
+                                    d="M99.13281,81.11035c0-23.2334,17.60108-40.13037,41.81983-40.13037,24.501,0,42.10156,16.897,42.10156,39.98975,0,23.23339-17.60059,40.271-42.10156,40.271C116.59277,121.24072,99.13281,104.34375,99.13281,81.11035Zm66.17969,0c0-14.78467-10.13818-24.21875-24.35986-24.21875-13.93994,0-24.21875,9.43408-24.21875,24.07813,0,14.78466,10.27881,24.50048,24.35986,24.50048C155.17432,105.47021,165.3125,95.75439,165.3125,81.11035Z"
+                                    transform="translate(-9.29346 -15.77539)"
+                                ></path>
+                                <path
+                                    class="cls-1"
+                                    d="M197.5625,119.69189V75.75977c0-21.68457,14.78467-34.77979,32.52637-34.77979,12.10986,0,20.27636,4.22461,26.0498,9.43457l-9.57519,12.39063a22.3907,22.3907,0,0,0-15.06641-5.91358c-10.84228,0-16.47461,5.773-16.47461,19.57227v43.228Z"
+                                    transform="translate(-9.29346 -15.77539)"
+                                ></path>
+                                <path
+                                    class="cls-1"
+                                    d="M340.20459,15.77539V79.70264c0,24.64111-17.46094,41.53808-41.96094,41.53808-24.501,0-41.96094-17.0376-41.96094-40.271S273.88379,40.98,296.83545,40.98c8.87109,0,18.44531,2.957,25.627,9.43457V15.77539ZM322.4624,80.96973c0-14.644-10.13769-24.07813-24.21875-24.07813s-24.21924,9.43408-24.21924,24.21875c0,14.644,9.99756,24.35986,24.07862,24.35986C312.32471,105.47021,322.4624,95.75439,322.4624,80.96973Z"
+                                    transform="translate(-9.29346 -15.77539)"
+                                ></path>
+                                <path
+                                    class="cls-1"
+                                    d="M439.478,82.80029v36.8916H421.87646V111.666c-7.04,6.75878-16.75585,9.5747-25.76757,9.5747-22.95215,0-40.55274-16.75586-40.55274-39.84863,0-23.2334,17.46-40.41211,41.96094-40.41211,24.5,0,41.96094,17.03809,41.96094,41.6792Zm-17.74219-1.4082c0-14.78467-10.1377-24.50049-24.35938-24.50049-14.08105,0-24.07812,9.71582-24.07812,24.35986,0,14.78467,10.1377,24.21875,24.21875,24.21875S421.73584,96.03613,421.73584,81.39209Z"
+                                    transform="translate(-9.29346 -15.77539)"
+                                ></path>
+                                <path
+                                    class="cls-1"
+                                    d="M475.52881,119.69189H458.06787V81.39209c0-23.79639,15.48926-40.41211,37.5957-40.41211,22.248,0,37.73731,16.61572,37.73731,40.41211v38.2998H515.93994V78.85742c0-12.9541-8.30762-21.96582-20.27637-21.96582-11.82714,0-20.13476,9.01172-20.13476,21.96582Z"
+                                    transform="translate(-9.29346 -15.77539)"
+                                ></path>
+                                <circle class="cls-1" cx="546.55962" cy="52.39776" r="10.05826"></circle>
+                                <path
+                                    class="cls-1"
+                                    d="M555.85309,102.57529a7.05826,7.05826,0,1,1-7.05829,7.05825,7.06624,7.06624,0,0,1,7.05829-7.05825m0-3a10.05826,10.05826,0,1,0,10.05823,10.05825,10.05826,10.05826,0,0,0-10.05823-10.05825Z"
+                                    transform="translate(-9.29346 -15.77539)"
+                                ></path>
+                            </g>
+                        </g>
+                    </svg>
+                    <h1 class="text-5xl lg:text-7xl text-white mb-10 filter drop-shadow-xl">innovation lighting</h1>
+                    <a
+                        id="discover"
+                        onclick="scrollToFeatures();"
+                        class="transition-colors cursor-pointer duration-300 bg-white hover:bg-black hover:border-white text-black hover:text-white border-2 font-bold py-2 px-5 rounded-sm hover:shadow-2xl"
+                    >
+                        Discover More →
+                    </a>
+                </div>
+            </div>
+
+            <div class="w-full h-full">
+                <div class="h-full flex flex-col justify-center">
+                    <svg class="" id="eHlcWaOeu1i1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-150 -150 1500 1500" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
                         <style>
-                            .cls-1 {
-                                fill: #fff;
+                            #eHlcWaOeu1i5_to {
+                                animation: eHlcWaOeu1i5_to__to 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i5_to__to {
+                                0% {
+                                    transform: translate(559.036604px, 961.236749px);
+                                }
+
+                                40.540541% {
+                                    transform: translate(559.036604px, 961.236749px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                50% {
+                                    transform: translate(559.036604px, 1032.40077px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                59.459459% {
+                                    transform: translate(559.036604px, 839.979363px);
+                                }
+
+                                62.162162% {
+                                    transform: translate(559.036604px, 839.979363px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                74.324324% {
+                                    transform: translate(559.036604px, 642.923573px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                86.486486% {
+                                    transform: translate(559.036604px, 1028.920949px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                100% {
+                                    transform: translate(559.036604px, 839.979363px);
+                                }
+                            }
+
+                            #eHlcWaOeu1i5_tr {
+                                animation: eHlcWaOeu1i5_tr__tr 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i5_tr__tr {
+                                0% {
+                                    transform: rotate(0deg);
+                                }
+
+                                20.27027% {
+                                    transform: rotate(0deg);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                33.783784% {
+                                    transform: rotate(90deg);
+                                }
+
+                                100% {
+                                    transform: rotate(90deg);
+                                }
+                            }
+
+                            #eHlcWaOeu1i5_ts {
+                                animation: eHlcWaOeu1i5_ts__ts 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i5_ts__ts {
+                                0% {
+                                    transform: scale(1.2, 1.2);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                13.513514% {
+                                    transform: scale(1, 1);
+                                }
+
+                                100% {
+                                    transform: scale(1, 1);
+                                }
+                            }
+
+                            #eHlcWaOeu1i5 {
+                                animation-name: eHlcWaOeu1i5__fl, eHlcWaOeu1i5_f_p, eHlcWaOeu1i5_s_p;
+                                animation-duration: 7400ms;
+                                animation-fill-mode: forwards;
+                                animation-timing-function: linear;
+                                animation-direction: normal;
+                                animation-iteration-count: 1;
+                            }
+
+                            @keyframes eHlcWaOeu1i5__fl {
+                                0% {
+                                    filter: drop-shadow(0px 0px 0px #000);
+                                }
+
+                                32.432432% {
+                                    filter: drop-shadow(0px 0px 0px #000);
+                                }
+
+                                33.783784% {
+                                    filter: drop-shadow(0px 0px 90.509668px #04f84e);
+                                }
+
+                                100% {
+                                    filter: drop-shadow(0px 0px 90.509668px #04f84e);
+                                }
+                            }
+
+                            @keyframes eHlcWaOeu1i5_f_p {
+                                0% {
+                                    fill: #070707;
+                                }
+
+                                32.432432% {
+                                    fill: #070707;
+                                }
+
+                                33.783784% {
+                                    fill: #3af673;
+                                }
+
+                                100% {
+                                    fill: #3af673;
+                                }
+                            }
+
+                            @keyframes eHlcWaOeu1i5_s_p {
+                                0% {
+                                    stroke: #fff;
+                                }
+
+                                32.432432% {
+                                    stroke: #fff;
+                                }
+
+                                33.783784% {
+                                    stroke: #3af673;
+                                }
+
+                                100% {
+                                    stroke: #3af673;
+                                }
+                            }
+
+                            #eHlcWaOeu1i6_to {
+                                animation: eHlcWaOeu1i6_to__to 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i6_to__to {
+                                0% {
+                                    transform: translate(559.036604px, 238.763251px);
+                                }
+
+                                40.540541% {
+                                    transform: translate(559.036604px, 238.763251px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                50% {
+                                    transform: translate(559.036604px, 162.923572px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                59.459459% {
+                                    transform: translate(559.036604px, 359.979363px);
+                                }
+
+                                62.162162% {
+                                    transform: translate(559.036604px, 359.979363px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                74.324324% {
+                                    transform: translate(559.036604px, 162.923572px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                86.486486% {
+                                    transform: translate(559.036604px, 548.920949px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                100% {
+                                    transform: translate(559.036604px, 359.979363px);
+                                }
+                            }
+
+                            #eHlcWaOeu1i6_tr {
+                                animation: eHlcWaOeu1i6_tr__tr 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i6_tr__tr {
+                                0% {
+                                    transform: rotate(0deg);
+                                }
+
+                                13.513514% {
+                                    transform: rotate(0deg);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                27.027027% {
+                                    transform: rotate(90deg);
+                                }
+
+                                100% {
+                                    transform: rotate(90deg);
+                                }
+                            }
+
+                            #eHlcWaOeu1i6_ts {
+                                animation: eHlcWaOeu1i6_ts__ts 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i6_ts__ts {
+                                0% {
+                                    transform: scale(1.2, 1.2);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                13.513514% {
+                                    transform: scale(1, 1);
+                                }
+
+                                100% {
+                                    transform: scale(1, 1);
+                                }
+                            }
+
+                            #eHlcWaOeu1i6 {
+                                animation-name: eHlcWaOeu1i6__fl, eHlcWaOeu1i6_f_p, eHlcWaOeu1i6_s_p;
+                                animation-duration: 7400ms;
+                                animation-fill-mode: forwards;
+                                animation-timing-function: linear;
+                                animation-direction: normal;
+                                animation-iteration-count: 1;
+                            }
+
+                            @keyframes eHlcWaOeu1i6__fl {
+                                0% {
+                                    filter: drop-shadow(0px 0px 0px #000);
+                                }
+
+                                25.675676% {
+                                    filter: drop-shadow(0px 0px 0px #000);
+                                }
+
+                                27.027027% {
+                                    filter: drop-shadow(0px 0px 90.509668px #dc01ff);
+                                }
+
+                                100% {
+                                    filter: drop-shadow(0px 0px 90.509668px #dc01ff);
+                                }
+                            }
+
+                            @keyframes eHlcWaOeu1i6_f_p {
+                                0% {
+                                    fill: #070707;
+                                }
+
+                                25.675676% {
+                                    fill: #070707;
+                                }
+
+                                27.027027% {
+                                    fill: #e967ff;
+                                }
+
+                                100% {
+                                    fill: #e967ff;
+                                }
+                            }
+
+                            @keyframes eHlcWaOeu1i6_s_p {
+                                0% {
+                                    stroke: #fff;
+                                }
+
+                                25.675676% {
+                                    stroke: #fff;
+                                }
+
+                                27.027027% {
+                                    stroke: #e967ff;
+                                }
+
+                                100% {
+                                    stroke: #e967ff;
+                                }
+                            }
+
+                            #eHlcWaOeu1i7_to {
+                                animation: eHlcWaOeu1i7_to__to 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i7_to__to {
+                                0% {
+                                    transform: translate(559.036604px, 599.979363px);
+                                }
+
+                                62.162162% {
+                                    transform: translate(559.036604px, 599.979363px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                74.324324% {
+                                    transform: translate(559.036604px, 402.923573px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                86.486486% {
+                                    transform: translate(559.036604px, 788.920949px);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                100% {
+                                    transform: translate(559.036604px, 599.979363px);
+                                }
+                            }
+
+                            #eHlcWaOeu1i7_tr {
+                                animation: eHlcWaOeu1i7_tr__tr 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i7_tr__tr {
+                                0% {
+                                    transform: rotate(0deg);
+                                }
+
+                                17.567568% {
+                                    transform: rotate(0deg);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                31.081081% {
+                                    transform: rotate(90deg);
+                                }
+
+                                100% {
+                                    transform: rotate(90deg);
+                                }
+                            }
+
+                            #eHlcWaOeu1i7_ts {
+                                animation: eHlcWaOeu1i7_ts__ts 7400ms linear 1 normal forwards;
+                            }
+
+                            @keyframes eHlcWaOeu1i7_ts__ts {
+                                0% {
+                                    transform: scale(1.2, 1.2);
+                                    animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+                                }
+
+                                13.513514% {
+                                    transform: scale(1, 1);
+                                }
+
+                                100% {
+                                    transform: scale(1, 1);
+                                }
+                            }
+
+                            #eHlcWaOeu1i7 {
+                                animation-name: eHlcWaOeu1i7__fl, eHlcWaOeu1i7_f_p, eHlcWaOeu1i7_s_p;
+                                animation-duration: 7400ms;
+                                animation-fill-mode: forwards;
+                                animation-timing-function: linear;
+                                animation-direction: normal;
+                                animation-iteration-count: 1;
+                            }
+
+                            @keyframes eHlcWaOeu1i7__fl {
+                                0% {
+                                    filter: drop-shadow(0px 0px 0px #000);
+                                }
+
+                                29.72973% {
+                                    filter: drop-shadow(0px 0px 0px #000);
+                                }
+
+                                31.081081% {
+                                    filter: drop-shadow(0px 0px 87.045965px #006eff);
+                                }
+
+                                100% {
+                                    filter: drop-shadow(0px 0px 87.045965px #006eff);
+                                }
+                            }
+
+                            @keyframes eHlcWaOeu1i7_f_p {
+                                0% {
+                                    fill: #070707;
+                                }
+
+                                29.72973% {
+                                    fill: #070707;
+                                }
+
+                                31.081081% {
+                                    fill: #1f9cff;
+                                }
+
+                                100% {
+                                    fill: #1f9cff;
+                                }
+                            }
+
+                            @keyframes eHlcWaOeu1i7_s_p {
+                                0% {
+                                    stroke: #fff;
+                                }
+
+                                29.72973% {
+                                    stroke: #fff;
+                                }
+
+                                31.081081% {
+                                    stroke: #1f9cff;
+                                }
+
+                                100% {
+                                    stroke: #1f9cff;
+                                }
                             }
                         </style>
-                    </defs>
-                    <g id="Layer_2" data-name="Layer 2">
-                        <g id="Layer_1-2" data-name="Layer 1">
-                            <path class="cls-1"
-                                d="M26.75342,119.69189h-17.46V81.39209C9.29346,57.5957,24.78223,40.98,46.88916,40.98c22.24756,0,37.73633,16.61572,37.73633,40.41211v38.2998h-17.46V78.85742c0-12.9541-8.30762-21.96582-20.27637-21.96582-11.82812,0-20.13574,9.01172-20.13574,21.96582Z"
-                                transform="translate(-9.29346 -15.77539)" />
-                            <path class="cls-1"
-                                d="M99.13281,81.11035c0-23.2334,17.60108-40.13037,41.81983-40.13037,24.501,0,42.10156,16.897,42.10156,39.98975,0,23.23339-17.60059,40.271-42.10156,40.271C116.59277,121.24072,99.13281,104.34375,99.13281,81.11035Zm66.17969,0c0-14.78467-10.13818-24.21875-24.35986-24.21875-13.93994,0-24.21875,9.43408-24.21875,24.07813,0,14.78466,10.27881,24.50048,24.35986,24.50048C155.17432,105.47021,165.3125,95.75439,165.3125,81.11035Z"
-                                transform="translate(-9.29346 -15.77539)" />
-                            <path class="cls-1"
-                                d="M197.5625,119.69189V75.75977c0-21.68457,14.78467-34.77979,32.52637-34.77979,12.10986,0,20.27636,4.22461,26.0498,9.43457l-9.57519,12.39063a22.3907,22.3907,0,0,0-15.06641-5.91358c-10.84228,0-16.47461,5.773-16.47461,19.57227v43.228Z"
-                                transform="translate(-9.29346 -15.77539)" />
-                            <path class="cls-1"
-                                d="M340.20459,15.77539V79.70264c0,24.64111-17.46094,41.53808-41.96094,41.53808-24.501,0-41.96094-17.0376-41.96094-40.271S273.88379,40.98,296.83545,40.98c8.87109,0,18.44531,2.957,25.627,9.43457V15.77539ZM322.4624,80.96973c0-14.644-10.13769-24.07813-24.21875-24.07813s-24.21924,9.43408-24.21924,24.21875c0,14.644,9.99756,24.35986,24.07862,24.35986C312.32471,105.47021,322.4624,95.75439,322.4624,80.96973Z"
-                                transform="translate(-9.29346 -15.77539)" />
-                            <path class="cls-1"
-                                d="M439.478,82.80029v36.8916H421.87646V111.666c-7.04,6.75878-16.75585,9.5747-25.76757,9.5747-22.95215,0-40.55274-16.75586-40.55274-39.84863,0-23.2334,17.46-40.41211,41.96094-40.41211,24.5,0,41.96094,17.03809,41.96094,41.6792Zm-17.74219-1.4082c0-14.78467-10.1377-24.50049-24.35938-24.50049-14.08105,0-24.07812,9.71582-24.07812,24.35986,0,14.78467,10.1377,24.21875,24.21875,24.21875S421.73584,96.03613,421.73584,81.39209Z"
-                                transform="translate(-9.29346 -15.77539)" />
-                            <path class="cls-1"
-                                d="M475.52881,119.69189H458.06787V81.39209c0-23.79639,15.48926-40.41211,37.5957-40.41211,22.248,0,37.73731,16.61572,37.73731,40.41211v38.2998H515.93994V78.85742c0-12.9541-8.30762-21.96582-20.27637-21.96582-11.82714,0-20.13476,9.01172-20.13476,21.96582Z"
-                                transform="translate(-9.29346 -15.77539)" />
-                            <circle class="cls-1" cx="546.55962" cy="52.39776" r="10.05826" />
-                            <path class="cls-1"
-                                d="M555.85309,102.57529a7.05826,7.05826,0,1,1-7.05829,7.05825,7.06624,7.06624,0,0,1,7.05829-7.05825m0-3a10.05826,10.05826,0,1,0,10.05823,10.05825,10.05826,10.05826,0,0,0-10.05823-10.05825Z"
-                                transform="translate(-9.29346 -15.77539)" />
+                        <g>
+                            <rect width="240" height="1105.997377" rx="5" ry="5" transform="translate(439.036604 42.923572)" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></rect>
+                            <rect width="235.028673" height="1105.997377" rx="0" ry="0" transform="matrix(.297836 0 0 1 524.036604 42.923572)" fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"></rect>
                         </g>
-                    </g>
-                </svg>
-                <h1 class="text-5xl lg:text-7xl text-white mb-10 filter drop-shadow-xl">innovation lighting</h1>
-                <a id="discover" onClick="scrollToFeatures();"
-                    class="transition-colors cursor-pointer duration-300 bg-white hover:bg-black hover:border-white text-black hover:text-white border-2  font-bold py-2 px-5 rounded-sm hover:shadow-2xl ">
-                    Discover More &rarr;
-                </a>
-            </div>
-        </div>
-        </div>
-        <div class="w-full h-full">
-            <div class="h-full flex flex-col justify-center">
-
-                <svg class="" id="eHlcWaOeu1i1" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-150 -150 1500 1500"
-                    shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
-                    <style>
-                        #eHlcWaOeu1i5_to {
-                            animation: eHlcWaOeu1i5_to__to 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i5_to__to {
-                            0% {
-                                transform: translate(559.036604px, 961.236749px)
-                            }
-
-                            40.540541% {
-                                transform: translate(559.036604px, 961.236749px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            50% {
-                                transform: translate(559.036604px, 1032.40077px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            59.459459% {
-                                transform: translate(559.036604px, 839.979363px)
-                            }
-
-                            62.162162% {
-                                transform: translate(559.036604px, 839.979363px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            74.324324% {
-                                transform: translate(559.036604px, 642.923573px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            86.486486% {
-                                transform: translate(559.036604px, 1028.920949px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            100% {
-                                transform: translate(559.036604px, 839.979363px)
-                            }
-                        }
-
-                        #eHlcWaOeu1i5_tr {
-                            animation: eHlcWaOeu1i5_tr__tr 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i5_tr__tr {
-                            0% {
-                                transform: rotate(0deg)
-                            }
-
-                            20.27027% {
-                                transform: rotate(0deg);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            33.783784% {
-                                transform: rotate(90deg)
-                            }
-
-                            100% {
-                                transform: rotate(90deg)
-                            }
-                        }
-
-                        #eHlcWaOeu1i5_ts {
-                            animation: eHlcWaOeu1i5_ts__ts 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i5_ts__ts {
-                            0% {
-                                transform: scale(1.2, 1.2);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            13.513514% {
-                                transform: scale(1, 1)
-                            }
-
-                            100% {
-                                transform: scale(1, 1)
-                            }
-                        }
-
-                        #eHlcWaOeu1i5 {
-                            animation-name: eHlcWaOeu1i5__fl, eHlcWaOeu1i5_f_p, eHlcWaOeu1i5_s_p;
-                            animation-duration: 7400ms;
-                            animation-fill-mode: forwards;
-                            animation-timing-function: linear;
-                            animation-direction: normal;
-                            animation-iteration-count: 1;
-                        }
-
-                        @keyframes eHlcWaOeu1i5__fl {
-                            0% {
-                                filter: drop-shadow(0px 0px 0px #000)
-                            }
-
-                            32.432432% {
-                                filter: drop-shadow(0px 0px 0px #000)
-                            }
-
-                            33.783784% {
-                                filter: drop-shadow(0px 0px 90.509668px #04f84e)
-                            }
-
-                            100% {
-                                filter: drop-shadow(0px 0px 90.509668px #04f84e)
-                            }
-                        }
-
-                        @keyframes eHlcWaOeu1i5_f_p {
-                            0% {
-                                fill: #070707
-                            }
-
-                            32.432432% {
-                                fill: #070707
-                            }
-
-                            33.783784% {
-                                fill: #3af673
-                            }
-
-                            100% {
-                                fill: #3af673
-                            }
-                        }
-
-                        @keyframes eHlcWaOeu1i5_s_p {
-                            0% {
-                                stroke: #fff
-                            }
-
-                            32.432432% {
-                                stroke: #fff
-                            }
-
-                            33.783784% {
-                                stroke: #3af673
-                            }
-
-                            100% {
-                                stroke: #3af673
-                            }
-                        }
-
-                        #eHlcWaOeu1i6_to {
-                            animation: eHlcWaOeu1i6_to__to 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i6_to__to {
-                            0% {
-                                transform: translate(559.036604px, 238.763251px)
-                            }
-
-                            40.540541% {
-                                transform: translate(559.036604px, 238.763251px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            50% {
-                                transform: translate(559.036604px, 162.923572px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            59.459459% {
-                                transform: translate(559.036604px, 359.979363px)
-                            }
-
-                            62.162162% {
-                                transform: translate(559.036604px, 359.979363px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            74.324324% {
-                                transform: translate(559.036604px, 162.923572px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            86.486486% {
-                                transform: translate(559.036604px, 548.920949px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            100% {
-                                transform: translate(559.036604px, 359.979363px)
-                            }
-                        }
-
-                        #eHlcWaOeu1i6_tr {
-                            animation: eHlcWaOeu1i6_tr__tr 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i6_tr__tr {
-                            0% {
-                                transform: rotate(0deg)
-                            }
-
-                            13.513514% {
-                                transform: rotate(0deg);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            27.027027% {
-                                transform: rotate(90deg)
-                            }
-
-                            100% {
-                                transform: rotate(90deg)
-                            }
-                        }
-
-                        #eHlcWaOeu1i6_ts {
-                            animation: eHlcWaOeu1i6_ts__ts 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i6_ts__ts {
-                            0% {
-                                transform: scale(1.2, 1.2);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            13.513514% {
-                                transform: scale(1, 1)
-                            }
-
-                            100% {
-                                transform: scale(1, 1)
-                            }
-                        }
-
-                        #eHlcWaOeu1i6 {
-                            animation-name: eHlcWaOeu1i6__fl, eHlcWaOeu1i6_f_p, eHlcWaOeu1i6_s_p;
-                            animation-duration: 7400ms;
-                            animation-fill-mode: forwards;
-                            animation-timing-function: linear;
-                            animation-direction: normal;
-                            animation-iteration-count: 1;
-                        }
-
-                        @keyframes eHlcWaOeu1i6__fl {
-                            0% {
-                                filter: drop-shadow(0px 0px 0px #000)
-                            }
-
-                            25.675676% {
-                                filter: drop-shadow(0px 0px 0px #000)
-                            }
-
-                            27.027027% {
-                                filter: drop-shadow(0px 0px 90.509668px #dc01ff)
-                            }
-
-                            100% {
-                                filter: drop-shadow(0px 0px 90.509668px #dc01ff)
-                            }
-                        }
-
-                        @keyframes eHlcWaOeu1i6_f_p {
-                            0% {
-                                fill: #070707
-                            }
-
-                            25.675676% {
-                                fill: #070707
-                            }
-
-                            27.027027% {
-                                fill: #e967ff
-                            }
-
-                            100% {
-                                fill: #e967ff
-                            }
-                        }
-
-                        @keyframes eHlcWaOeu1i6_s_p {
-                            0% {
-                                stroke: #fff
-                            }
-
-                            25.675676% {
-                                stroke: #fff
-                            }
-
-                            27.027027% {
-                                stroke: #e967ff
-                            }
-
-                            100% {
-                                stroke: #e967ff
-                            }
-                        }
-
-                        #eHlcWaOeu1i7_to {
-                            animation: eHlcWaOeu1i7_to__to 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i7_to__to {
-                            0% {
-                                transform: translate(559.036604px, 599.979363px)
-                            }
-
-                            62.162162% {
-                                transform: translate(559.036604px, 599.979363px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            74.324324% {
-                                transform: translate(559.036604px, 402.923573px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            86.486486% {
-                                transform: translate(559.036604px, 788.920949px);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            100% {
-                                transform: translate(559.036604px, 599.979363px)
-                            }
-                        }
-
-                        #eHlcWaOeu1i7_tr {
-                            animation: eHlcWaOeu1i7_tr__tr 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i7_tr__tr {
-                            0% {
-                                transform: rotate(0deg)
-                            }
-
-                            17.567568% {
-                                transform: rotate(0deg);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            31.081081% {
-                                transform: rotate(90deg)
-                            }
-
-                            100% {
-                                transform: rotate(90deg)
-                            }
-                        }
-
-                        #eHlcWaOeu1i7_ts {
-                            animation: eHlcWaOeu1i7_ts__ts 7400ms linear 1 normal forwards
-                        }
-
-                        @keyframes eHlcWaOeu1i7_ts__ts {
-                            0% {
-                                transform: scale(1.2, 1.2);
-                                animation-timing-function: cubic-bezier(0.42, 0, 0.58, 1)
-                            }
-
-                            13.513514% {
-                                transform: scale(1, 1)
-                            }
-
-                            100% {
-                                transform: scale(1, 1)
-                            }
-                        }
-
-                        #eHlcWaOeu1i7 {
-                            animation-name: eHlcWaOeu1i7__fl, eHlcWaOeu1i7_f_p, eHlcWaOeu1i7_s_p;
-                            animation-duration: 7400ms;
-                            animation-fill-mode: forwards;
-                            animation-timing-function: linear;
-                            animation-direction: normal;
-                            animation-iteration-count: 1;
-                        }
-
-                        @keyframes eHlcWaOeu1i7__fl {
-                            0% {
-                                filter: drop-shadow(0px 0px 0px #000)
-                            }
-
-                            29.72973% {
-                                filter: drop-shadow(0px 0px 0px #000)
-                            }
-
-                            31.081081% {
-                                filter: drop-shadow(0px 0px 87.045965px #006eff)
-                            }
-
-                            100% {
-                                filter: drop-shadow(0px 0px 87.045965px #006eff)
-                            }
-                        }
-
-                        @keyframes eHlcWaOeu1i7_f_p {
-                            0% {
-                                fill: #070707
-                            }
-
-                            29.72973% {
-                                fill: #070707
-                            }
-
-                            31.081081% {
-                                fill: #1f9cff
-                            }
-
-                            100% {
-                                fill: #1f9cff
-                            }
-                        }
-
-                        @keyframes eHlcWaOeu1i7_s_p {
-                            0% {
-                                stroke: #fff
-                            }
-
-                            29.72973% {
-                                stroke: #fff
-                            }
-
-                            31.081081% {
-                                stroke: #1f9cff
-                            }
-
-                            100% {
-                                stroke: #1f9cff
-                            }
-                        }
-                    </style>
-                    <g>
-                        <rect width="240" height="1105.997377" rx="5" ry="5" transform="translate(439.036604 42.923572)"
-                            fill="none" stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-                        <rect width="235.028673" height="1105.997377" rx="0" ry="0"
-                            transform="matrix(.297836 0 0 1 524.036604 42.923572)" fill="none" stroke="#fff"
-                            stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
-                    </g>
-                    <g id="eHlcWaOeu1i5_to" transform="translate(559.036604,961.236749)">
-                        <g id="eHlcWaOeu1i5_tr" transform="rotate(0)">
-                            <g id="eHlcWaOeu1i5_ts" transform="scale(1.2,1.2)">
-                                <rect id="eHlcWaOeu1i5" style="filter:drop-shadow(0px 0px 0px #000)" width="240"
-                                    height="240" rx="0" ry="0" transform="translate(-120,-120)" fill="#070707"
-                                    stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        <g id="eHlcWaOeu1i5_to" transform="translate(559.036604,961.236749)">
+                            <g id="eHlcWaOeu1i5_tr" transform="rotate(0)">
+                                <g id="eHlcWaOeu1i5_ts" transform="scale(1.2,1.2)">
+                                    <rect
+                                        id="eHlcWaOeu1i5"
+                                        style="filter: drop-shadow(0px 0px 0px #000);"
+                                        width="240"
+                                        height="240"
+                                        rx="0"
+                                        ry="0"
+                                        transform="translate(-120,-120)"
+                                        fill="#070707"
+                                        stroke="#fff"
+                                        stroke-width="6"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></rect>
+                                </g>
                             </g>
                         </g>
-                    </g>
-                    <g id="eHlcWaOeu1i6_to" transform="translate(559.036604,238.763251)">
-                        <g id="eHlcWaOeu1i6_tr" transform="rotate(0)">
-                            <g id="eHlcWaOeu1i6_ts" transform="scale(1.2,1.2)">
-                                <rect id="eHlcWaOeu1i6" style="filter:drop-shadow(0px 0px 0px #000)" width="240"
-                                    height="240" rx="0" ry="0" transform="translate(-120,-120)" fill="#070707"
-                                    stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        <g id="eHlcWaOeu1i6_to" transform="translate(559.036604,238.763251)">
+                            <g id="eHlcWaOeu1i6_tr" transform="rotate(0)">
+                                <g id="eHlcWaOeu1i6_ts" transform="scale(1.2,1.2)">
+                                    <rect
+                                        id="eHlcWaOeu1i6"
+                                        style="filter: drop-shadow(0px 0px 0px #000);"
+                                        width="240"
+                                        height="240"
+                                        rx="0"
+                                        ry="0"
+                                        transform="translate(-120,-120)"
+                                        fill="#070707"
+                                        stroke="#fff"
+                                        stroke-width="6"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></rect>
+                                </g>
                             </g>
                         </g>
-                    </g>
-                    <g id="eHlcWaOeu1i7_to" transform="translate(559.036604,599.979363)">
-                        <g id="eHlcWaOeu1i7_tr" transform="rotate(0)">
-                            <g id="eHlcWaOeu1i7_ts" transform="scale(1.2,1.2)">
-                                <rect id="eHlcWaOeu1i7" style="filter:drop-shadow(0px 0px 0px #000)" width="240"
-                                    height="240" rx="0" ry="0" transform="translate(-120,-120)" fill="#070707"
-                                    stroke="#fff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+                        <g id="eHlcWaOeu1i7_to" transform="translate(559.036604,599.979363)">
+                            <g id="eHlcWaOeu1i7_tr" transform="rotate(0)">
+                                <g id="eHlcWaOeu1i7_ts" transform="scale(1.2,1.2)">
+                                    <rect
+                                        id="eHlcWaOeu1i7"
+                                        style="filter: drop-shadow(0px 0px 0px #000);"
+                                        width="240"
+                                        height="240"
+                                        rx="0"
+                                        ry="0"
+                                        transform="translate(-120,-120)"
+                                        fill="#070707"
+                                        stroke="#fff"
+                                        stroke-width="6"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    ></rect>
+                                </g>
                             </g>
                         </g>
-                    </g>
-                </svg>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="h-auto flex justify-center lg:items-center text-gray-300 z-0 mx-auto " id="features">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 center ">
-
-            <div class="hexagon flex flex-col p-6">
-                <div class="mx-auto p-3 rounded-full m-1">
-                    <img width="116" height="128" class="h-16 w-auto fill-white" src="img/secure.webp"
-                        alt="Padlock symbolising Security">
+                    </svg>
                 </div>
-                <header class="font-bold ">
-                    <h1 class="text-xl">Secure</h1>
-                </header>
-                <p class="">No cloud or registration necessary to use nordan. Just add the device in the
-                    app or HomeKit and you're
-                    ready to go. Our Cloud is optionally available and secured on multiple layers.</p>
             </div>
+        </section>
 
-            <div class="hexagon flex flex-col p-6 bg-gray-400">
-                <div class="mx-auto p-3 rounded-full m-1">
-                    <img width="128" height="128" class="w-16 h-16" src="img/seamless.webp"
-                        alt="3 Rectangles and a plus symbol">
+        <section class="h-auto flex justify-center lg:items-center text-gray-300 z-0 mx-auto" id="features">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 center">
+                <div class="hexagon flex flex-col p-6">
+                    <div class="mx-auto p-3 rounded-full m-1">
+                        <img width="116" height="128" class="h-16 w-auto fill-white" src="img/secure.webp" alt="Padlock symbolising Security" />
+                    </div>
+                    <header class="font-bold">
+                        <h1 class="text-xl">Secure</h1>
+                    </header>
+                    <p class="">No cloud or registration necessary to use nordan. Just add the device in the app or HomeKit and you're ready to go. Our Cloud is optionally available and secured on multiple layers.</p>
                 </div>
-                <header class="font-bold ">
-                    <h1 class="text-xl">Seamless</h1>
-                </header>
-                <p class="">nordan devices are set up in seconds and use an open API and HomeKit for
-                    optimal collaboration with
-                    other devices. The nordan app takes the ease of use for the smart home to a whole new level.</p>
-            </div>
-            <div class="hexagon flex flex-col p-6">
-                <div class="mx-auto p-3 rounded-full m-1">
-                    <img width="128" height="128" class="w-14 h-14" src="img/futureproof.webp"
-                        alt="Rocket symbolising futureproofness">
+
+                <div class="hexagon flex flex-col p-6 bg-gray-400">
+                    <div class="mx-auto p-3 rounded-full m-1">
+                        <img width="128" height="128" class="w-16 h-16" src="img/seamless.webp" alt="3 Rectangles and a plus symbol" />
+                    </div>
+                    <header class="font-bold">
+                        <h1 class="text-xl">Seamless</h1>
+                    </header>
+                    <p class="">nordan devices are set up in seconds and use an open API and HomeKit for optimal collaboration with other devices. The nordan app takes the ease of use for the smart home to a whole new level.</p>
                 </div>
-                <header class="font-bold ">
-                    <h1 class="text-xl">
-                        Futureproof
-                    </h1>
-                </header>
-                <p class="">Combined with the latest technology and support for WLAN and Bluetooth. nordan
-                    devices convince with a
-                    complete range of functions that are constantly improved and expanded through updates.</p>
+                <div class="hexagon flex flex-col p-6">
+                    <div class="mx-auto p-3 rounded-full m-1">
+                        <img width="128" height="128" class="w-14 h-14" src="img/futureproof.webp" alt="Rocket symbolising futureproofness" />
+                    </div>
+                    <header class="font-bold">
+                        <h1 class="text-xl">
+                            Futureproof
+                        </h1>
+                    </header>
+                    <p class="">Combined with the latest technology and support for WLAN and Bluetooth. nordan devices convince with a complete range of functions that are constantly improved and expanded through updates.</p>
+                </div>
             </div>
-
-        </div>
-    </section>
-    <section class="h-screen flex flex-col justify-center items-center">
-        <h1 class="text-5xl sm:text-7xl text-white">Soon on</h1>
-        <a href="https://kickstarter.com" style="display:inline-block;vertical-align: top">
-            <img width="390" height="43" class="w-full sm:w-2/3 mt-6 px-12 mx-auto" src="img/kickstarter.png"
-                alt="Kickstarter Logo"></a>
-    </section>
-    <script>
-
-
-        function scrollToFeatures() {
-            document.getElementById('features').scrollIntoView({
-                behavior: 'auto',
-                block: window.innerWidth > 640 ? 'center' : 'start',
-                inline: window.innerWidth > 640 ? 'center' : 'start',
-            });
-
-        }
-    </script>
-</body>
-
+        </section>
+        <section class="h-screen flex flex-col justify-center items-center">
+            <h1 class="text-5xl sm:text-7xl text-white">Soon on</h1>
+            <a href="https://kickstarter.com" style="display: inline-block; vertical-align: top;"> <img width="390" height="43" class="w-full sm:w-2/3 mt-6 px-12 mx-auto" src="img/kickstarter.png" alt="Kickstarter Logo" /></a>
+        </section>
+        <script>
+            function scrollToFeatures() {
+                document.getElementById("features").scrollIntoView({
+                    behavior: "auto",
+                    block: window.innerWidth > 640 ? "center" : "start",
+                    inline: window.innerWidth > 640 ? "center" : "start",
+                });
+            }
+        </script>
+    </body>
 </html>
